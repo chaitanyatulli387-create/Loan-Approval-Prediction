@@ -1,6 +1,6 @@
-# Employee Salary Prediction
+# Loan Approval Prediction
 
-A machine learning project that predicts an employee's salary based on factors such as experience, education, job role, and other relevant features.
+A machine learning project that predicts whether a loan application is likely to be approved.
 
 ## Technologies Used
 
@@ -16,44 +16,44 @@ A machine learning project that predicts an employee's salary based on factors s
 
 ## Dataset
 
-Employee Salary Prediction dataset.
+Loan Approval Prediction dataset.
 
-The dataset contains information about employees, including their years of experience, education level, job title, age, and other relevant details used to predict salary.
+The dataset contains information about loan applicants, including their income, education, employment status, credit history, loan amount, loan term, and property area.
 
 ## Machine Learning Models
 
 The project compares:
 
-1. Linear Regression
-2. Decision Tree Regressor
-3. Random Forest Regressor
-4. K-Nearest Neighbors Regressor
+1. Logistic Regression
+2. Decision Tree
+3. Random Forest
+4. K-Nearest Neighbors
 
 Models are evaluated using:
 
-* Mean Absolute Error (MAE)
-* Mean Squared Error (MSE)
-* Root Mean Squared Error (RMSE)
-* R² Score
+* Accuracy
+* Precision
+* Recall
+* F1 Score
 
-The model with the best performance is selected as the final model.
+The model with the highest F1 score is selected as the final model.
 
 ## Project Structure
 
 ```text
-Employee-Salary-Prediction/
+Loan-Approval-Prediction/
 │
 ├── data/
-│   └── salary_data.csv
+│   └── loan_data.csv
 │
 ├── models/
-│   ├── salary_model.pkl
+│   ├── loan_approval_model.pkl
 │   └── model_comparison.csv
 │
 ├── src/
 │   └── train_model.py
 │
-├── Employee_Salary_Prediction.ipynb
+├── Loan_Approval_Prediction.ipynb
 ├── app.py
 ├── requirements.txt
 └── README.md
